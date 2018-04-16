@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap-Exercise</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <style>
+      .timeline-item {
+        display: flex;
+        justify-content: end;
+      }
+      .icons {
+        transform: translateX(50%);
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="container-fluid" style="height: 100vh;">
+      <div class="row h-100">
+        <div class="col-6 h-100 p-0 border-right">
+          <div class="timeline d-flex flex-column h-100 justify-content-around align-items-end">
+            <div class="timeline-item 1st">
+              <div class="icons" id="icon1" data-container="body" data-toggle="popover" data-placement="left" 
+              data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." 
+              title="Mussum ipsum cacilds" style="background-color: gray;">
+                <i class="far fa-check-square" style="color: white;"></i>
+              </div>
+            </div>
+            <div class="timeline-item 2nd">
+              <div class="icons icon2" data-container="body" data-toggle="popover" data-placement="right" 
+              data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." style="background-color: orange">
+                <i class="fas fa-home" style="color: white;"></i>
+              </div>
+            </div>
+            <div class="timeline-item 3rd">
+              <div class="icons icon3" data-container="body" data-toggle="popover" data-placement="left" 
+              data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." style="background-color: orangered">
+                <i class="fas fa-home" style="color: white;"></i>
+              </div>
+            </div>  
+          </div>        
+        </div>
+      </div>
+    </main>
+
+
+    <script>
+      var content1 = ``
+      $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();
+        $('[data-toggle="popover"]').popover("show");
+      })
+    </script>
+  </body>
+</html>

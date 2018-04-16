@@ -1,0 +1,175 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap-Exercise</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>   
+    <style>
+      * {
+        box-sizing:border-box;
+      }
+      body {
+        height: 100vh;
+      }
+      p, td {
+        font-size: .9em;
+      }
+      td {
+        height: 50px;;
+      }
+      .main-border {
+        border-bottom: 2px solid #dee2e6!important;
+      }
+      .txt-effect {
+        font-weight: initial;
+        font-size: 1.2em;
+        font-weight: initial;
+        font-size: 1.2em;
+        vertical-align: initial;
+      }
+      .row-icon {
+        text-align: center;
+      }
+      p {
+        margin-bottom: -5px;
+      }
+      p, .fa-question, .fa-heart, .fa-magic {
+        color: dodgerblue
+      }
+      table {
+        margin-bottom: 30px;
+      }
+      .no-content {
+        height: initial;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="container" style="height: 100%;">
+      <div class="row justify-content-center align-items-center" style="height: inherit;">
+        <div class="row flex-column col-12 ">
+          <header>
+            <div class="head-top d-flex justify-content-between">
+              <div class="forum-name d-flex align-items-end"><h3 class="mb-0">Forums</h3></div>
+              <div class="page-links py-1 px-2 mb-3" style="border-radius: 5px; background-color: rgb(238, 238, 238);">
+                <small><a href="#">Forums</a>&nbsp; / &nbsp;<a href="#">List of topics</a></small></div>
+            </div>
+            <hr>
+            <div class="head-descrip mb-5">
+              <p style="color: initial">This is the right place to discuss any ideas, critics, <a href="#">feature</a> requests and all the ideas regarding our website.
+                Please follow the forum rules and always check FAQ before posting to prevent duplicate posts.</p>
+            </div>
+          </header>
+          <table class="table-striped">
+            <thead>
+              <tr class="main-border">
+                <th width="10%" height="40"> </th>
+                <th width="50%" class="txt-effect">Important</th>
+                <th width="10%">Topics</th>
+                <th width="10%">Posts</th>
+                <th width="20%">Last Post</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-bottom">
+                <th class="row-icon"><i class="fas fa-question"></i></th>
+                <td>
+                  <p>Frequently Asked Questions</p>
+                  <small>Category description</small>
+                </td>
+                <td><p>9 542</p></td>
+                <td><p>89 897</p></td>
+                <td>
+                  <p>by <a href="#">John Doe</a></p>
+                  <small><i class="fas fa-clock"></i> 3 minutes ago</small></td>
+              </tr>
+              <tr>
+                <th class="row-icon"><i class="fas fa-exclamation" style="color: darkred"></i></th>
+                <td>
+                  <p>Important changes</p>
+                  <small>Category description</small>
+                </td>
+                <td><p>6532</p></td>
+                <td><p>152123</p></td>
+                <td>
+                  <p>by <a href="#">Jane Doe</a></p>
+                  <small><i class="fas fa-clock"></i> 1 minutes ago</small></td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="table-striped">
+              <thead>
+                <tr class="main-border">
+                  <th width="10%" height="40"> </th>
+                  <th width="50%" class="txt-effect">Suggestions</th>
+                  <th width="10%">Topics</th>
+                  <th width="10%">Posts</th>
+                  <th width="20%">Last Post</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-bottom">
+                  <th class="row-icon"><i class="fas fa-heart"></i></th>
+                  <td>
+                    <p>More more more</p>
+                    <small>Category description</small>
+                  </td>
+                  <td><p>6532</p></td>
+                  <td><p>152123</p></td>
+                  <td>
+                    <p>by <a href="#">John Doe</a></p>
+                    <small><i class="fas fa-clock"></i> 3 minutes ago</small></td>
+                </tr>
+                <tr>
+                  <th class="row-icon"><i class="fas fa-magic"></i></th>
+                  <td>
+                    <p>Haha</p>
+                    <small>Category description</small>
+                  </td>
+                  <td><p>6532</p></td>
+                  <td><p>152123</p></td>
+                  <td>
+                    <p>by <a href="#">Jane Doe</a></p>
+                    <small><i class="fas fa-clock"></i> 1 minutes ago</small></td>
+                  </td>
+                </tr>
+              </tbody>
+          </table>
+
+          <table class="table-striped">
+            <thead>
+              <tr class="main-border">
+                <th width="10%" height="40"> </th>
+                <th width="50%" class="txt-effect">Open discussion</th>
+                <th width="10%">Topics</th>
+                <th width="10%">Posts</th>
+                <th width="20%">Last Post</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-bottom">
+                <th class="row-icon"></th>
+                <td class="no-content">
+                  <small>No topics have been added yet</small>
+                </td>
+                <td class="no-content"></td>
+                <td class="no-content"></td>
+                <td class="no-content"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+

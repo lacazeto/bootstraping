@@ -1,0 +1,126 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap-Exercise</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>        
+    <style>
+      td, th, button, .row-header {
+        font-weight: initial;
+      }
+      thead, tbody {
+        text-align: center;
+      }
+      .t-white, button {
+        vertical-align: middle !important;
+        color: white; 
+      }
+      .fa-check {
+        color: springgreen;
+      }
+      .fa-times{
+        color: red;
+      }
+      @media (min-width: 991px){
+        table {
+          width: 80% !important;
+          max-width: 80% !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="container">
+      <div class="row flex-column align-items-center justify-content-center" style="height: inherit;">
+          <div class="header" style="margin-bottom: 5%;">
+            <h2 style="text-align: center;">Hosting Pricing Table (Nine)</h2>
+            <div class="d-flex justify-content-center"><small>Crafted by <a href="#">DesginBootstrap</a></small></div>
+          </div>  
+        <table class="table border">
+          <thead>
+              <tr>
+                <th scope="col" height="75"> </th>
+                <th scope="col" class="t-white" style="background-color: orangered">Basic</th>
+                <th scope="col" class="t-white" style="background-color: dodgerblue">Medium</th>
+                <th scope="col" class="t-white" style="background-color: teal">Advance</th>
+              </tr>
+              <tbody>
+                <tr>
+                  <th scope="row" class="row-header">20 GB Hard Disk Included</th>
+                  <td>N/A</td>
+                  <td><i class="fas fa-check"></i></td>
+                  <td><i class="fas fa-check"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="row-header">129 TB Bandwidth</th>
+                  <td><i class="fas fa-check"></i></td>
+                  <td>N/A</td>
+                  <td><i class="fas fa-check"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="row-header">Dedicated Support Panel</th>
+                  <td><i class="fas fa-check"></i></td>
+                  <td><i class="fas fa-times"></i></td>
+                  <td><i class="fas fa-check"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="row-header">Extra Plugin Features</th>
+                  <td><i class="fas fa-times"></i></td>
+                  <td><i class="fas fa-times"></i></td>
+                  <td><i class="fas fa-check"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="row-header">Email Support</th>
+                  <td><i class="fas fa-check"></i></td>
+                  <td><i class="fas fa-times"></i></td>
+                  <td><i class="fas fa-check"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="row-header">Chat Support Option</th>
+                  <td><i class="fas fa-check"></i></td>
+                  <td><i class="fas fa-check"></i></td>
+                  <td><i class="fas fa-times"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="row-header">Dedicated Support Panel</th>
+                  <td><i class="fas fa-check"></i></td>
+                  <td><i class="fas fa-times"></i></td>
+                  <td><i class="fas fa-check"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="row-header">Extra Plugin Features</th>
+                  <td><i class="fas fa-times"></i></td>
+                  <td><i class="fas fa-times"></i></td>
+                  <td><i class="fas fa-check"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="row-header">E-mail Support</th>
+                  <td><i class="fas fa-check"></i></td>
+                  <td><i class="fas fa-times"></i></td>
+                  <td><i class="fas fa-check"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="row-header">Chat Support Option</th>
+                  <td><i class="fas fa-check"></i></td>
+                  <td><i class="fas fa-check"></i></td>
+                  <td><i class="fas fa-times"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="row-header"></th>
+                  <td class="px-0"><button type="button" class="btn" style="background-color: orangered">BUY PLAN</button></td>
+                  <td class="px-0"><button type="button" class="btn" style="background-color: dodgerblue">BUY PLAN</button></td>
+                  <td class="px-0"><button type="button" class="btn" style="background-color: teal">BUY PLAN</button></td>
+                </tr>
+              </tbody>
+            </thead>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>

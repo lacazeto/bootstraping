@@ -1,0 +1,137 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap-Exercise</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>       
+    <style>
+      .head {
+        padding: 20px 20px 5px 20px;
+        background-color: rgb(241, 241, 241);
+      }
+      .social-medias {
+        height: 25px;
+        padding: 15px 0 0px 5px;
+      }
+      .photo {
+        background-color: darkgray;
+        color:dimgray;
+        height: 150px;
+        width: 150px;
+      }
+      .personal-info {
+        width: 60%;
+        border: rgb(241, 241, 241) 1px solid;
+      }
+      .personal-info * {
+        font-size: 0.9rem;
+        line-height: 30px;
+        border-bottom: rgb(241, 241, 241) 1px solid;
+        background-color: rgba(255, 255, 255, 0.966);
+      }
+      .info-cel{
+        padding-left: 10px;
+      }
+      .media {
+        float: left;
+        width: 25px;
+        font-size: 25px;
+      }
+      i {
+        font-size: 20px;
+      }
+      .user-text {
+        border-right: rgb(241, 241, 241) 1.5px solid;
+        border-top: rgb(241, 241, 241) 1.5px solid;
+      }
+      .head, .user-text {
+        width: 75%;
+      }
+      .summary, .research, .experiences {
+        border-left: 2px red solid;
+        margin-bottom: 4px;
+        border-top: rgb(241, 241, 241) 1px solid;
+        border-bottom: rgb(241, 241, 241) 1px solid;
+        padding: 10px 10px 15px 10px;
+      }
+      p, li {
+        margin-bottom: 0;
+        font-size: 0.9rem;
+      }
+      .exp-1, .exp-2 {
+        border: rgb(241, 241, 241) 1px solid;
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container title">
+      <div class="row align-items-center justify-content-center">
+        <h2>Resume of John Doe</h2>
+        <div class="w-100"></div>
+        <small>Last Updated on Sunday, October 25, 2014</small>
+      </div>
+      <hr style="margin-top: 10px;">
+    </div>
+    <main class="container cv-page">
+      <div class="row justify-content-center">
+        <div class="head row justify-content-around rounded">
+          <div class="left-side">
+            <div class="photo rounded-circle d-flex align-items-center justify-content-center">
+              <small>300 x 300</small>
+            </div>
+            <div class="social-medias col-12">
+              <div class="media google"><i class="fab fa-google-plus-square" style="color: red"></i></div>
+              <div class="media facebook"><i class="fab fa-facebook" style="color: rgb(0, 60, 255)"></i></div>
+              <div class="media twitter"><i class="fab fa-twitter-square" style="color: rgb(0, 132, 255)"></i></div>
+              <div class="media linkedin"><i class="fab fa-linkedin" style="color: rgb(51, 115, 175)"></i></div>
+              <div class="media github"><i class="fab fa-github-square" style="color: black"></i></div>
+              <div class="media other"><i class="fab fa-tumblr-square" style="color: sandybrown"></i></div>
+            </div>
+          </div>
+          <div class="personal-info rounded">
+            <div class="name info-cel"> John Doe</div>
+            <div class="profession info-cel">Software Engineer</div>
+            <div class="company info-cel">Google Inc.</div>
+            <div class="tel-number info-cel"><i class="fas fa-phone"></i> 000-000-0000</div>
+            <div class="email info-cel"><i class="fas fa-envelope"></i> john@example.com</div>                   
+          </div>
+        </div>
+        <div class="w-100"></div>
+        <div class="user-text">
+          <div class="summary">
+            <h6 style="color: red;">Summary</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut malesuada augue in cursus bibendum. Sed ac cursus est. 
+              Nunc semper lacinia tincidunt. Donec vitae fermentum ante, et mattis eros. </p>
+          </div>
+          <div class="research">
+            <h6 style="color: red;">Research Interests</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut malesuada augue in cursus bibendum. </p>
+          </div>
+          <div class="experiences">
+              <h6 style="color: red;">Prior Experiences</h6>
+              <div class="exp-1">
+                <h6>Software Engineer at Twitter</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut malesuada augue in cursus bibendum. Sed ac cursus est. 
+                  Nunc semper lacinia tincidunt. Donec vitae fermentum ante, et mattis eros. </p>
+              </div>
+              <div class="exp-2">
+                  <h6>Software Engineer at Linkedin</h6>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut malesuada augue in cursus bibendum. Sed ac cursus est. 
+                    Nunc semper lacinia tincidunt. Donec vitae fermentum ante, et mattis eros. </p>
+                    <ul>
+                      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    </ul>
+                </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
