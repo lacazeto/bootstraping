@@ -1,0 +1,80 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap-Exercise</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>           
+    <style>
+      form {
+        max-width: 432px;
+        border: 1px solid rgb(223, 221, 221);
+      }
+      .wrap-1st {
+        padding: 10px 10px;
+        max-width: 100%;
+      }
+      .fa-credit-card {
+        font-size: 3em;
+        height: 38px;
+      }
+      .form-group {
+        padding: 0 10px;
+      }
+      small {
+        height: 30px;
+        line-height: 16px;
+      }
+      .form-check {
+        margin-left: 0.7rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="container">
+      <div class="row align-items-center justify-content-center" style="height: 100vh";>
+        <form class="rounded d-flex justify-content-center bg-light">
+          <div class="wrapper wrap-1st row">
+            <div class="form-group col-12">
+              <input type="text" class="form-control" id="cardNumber" placeholder="Enter Card Number">
+            </div>
+            <div class="w-100"></div>
+            <div class="form-group col-3">
+              <small id="monthHelp" class="form-text text-muted">Expiry Month</small>
+              <input type="text" class="form-control" id="month" placeholder="MM">
+            </div>
+            <div class="form-group col-3">
+              <small id="yearHelp" class="form-text text-muted">Expiry Year</small>
+              <input type="text" class="form-control" id="year" placeholder="YY">
+            </div>
+            <div class="form-group col-3">
+              <small id="ccvHelp" class="form-text text-muted">CCV</small>
+              <input type="text" class="form-control" id="ccv" placeholder="CCV">
+            </div>
+            <div class="form-group col-3">
+              <small class="form-text" style="color: #f8f9fa;">A</small>
+              <i class="far fa-credit-card"></i>
+            </div>
+            <div class="form-group col-12">
+              <input type="text" class="form-control" id="cardNumber" placeholder="Name on the card">
+            </div>
+            
+            <div class="form-check col-12">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label for="exampleCheck1">Save details for fast payments <a href="#">learn how ?</a></label>
+            </div>
+            <div class="wrapper col-12 d-flex justify-content-between mt-2">
+              <button type="submit" class="btn btn-danger col-3">CANCEL</button>
+              <button type="submit" class="btn btn-warning col-6">PAY NOW</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>    
+  </body>
+</html>
