@@ -1,0 +1,252 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap-Exercise</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>               
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .wrapper {
+        height: 100vh;
+      }
+      .plan {
+        text-align: center;
+      }
+      .plan-block {
+        min-height: 200px;
+        width: 180px;
+        border-bottom: 2px solid rgb(141, 141, 141, .5);
+      }
+      .plan-type, .button-area {
+        height: 20%;
+        line-height: 39px;
+      }
+      .plan-price {
+        height: 25%;    
+        line-height: 59px;   
+      }
+      .plan-features {
+        height: 35%;
+      }
+      small {
+        font-size: .6em;
+        vertical-align: middle;
+      }
+      .button-area {
+        text-align: center;
+      }
+      .btn {
+        width: 90%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row wrapper align-items-center justify-content-center">
+        <div class="row plan-table border-top justify-content-around no-gutters">
+          <div class="col plan-block mt-3 ml-2 mr-2" style="border-top: 2px solid rgb(158, 25, 51);">
+            <div class="plan plan-type" style="background-color: rgb(196, 30, 63); color: white">
+              PRO PLAN
+            </div>
+            <div class="plan plan-price" style="background-color: rgb(253, 44, 86); color: white">
+              <b>$10 / month</b>
+            </div>
+            <div class="plan plan-features d-flex flex-column">
+              <div class="feature f1">
+                <small><i class="fas fa-check text-success"></i> Personal use</small>
+              </div>
+              <div class="feature f2 border-top border-bottom">
+                <small><i class="fas fa-check text-success"></i> Unlimited projects</small>
+              </div>
+              <div class="feature f3">
+                <small><i class="fas fa-check text-success"></i> 24/7 support</small>
+              </div>              
+            </div>
+            <div class="button-area" style="background-color: #efefef;">
+              <div class="btn btn-sm" style="background-color: rgb(196, 30, 63); color: white">
+                BUY NOW!
+              </div>
+            </div>
+          </div>
+          <div class="col plan-block mt-3 ml-2 mr-2" style="border-top: 2px solid rgb(20, 64, 131);">
+              <div class="plan plan-type" style="background-color: rgb(26, 86, 175); color: white">
+                DEV PLAN
+              </div>
+              <div class="plan plan-price" style="background-color: rgb(37, 112, 224); color: white">
+                <b>$20 / month</b>
+              </div>
+              <div class="plan plan-features d-flex flex-column">
+                <div class="feature f1">
+                  <small><i class="fas fa-check text-success"></i> Personal use</small>
+                </div>
+                <div class="feature f2 border-top border-bottom">
+                  <small><i class="fas fa-check text-success"></i> Unlimited projects</small>
+                </div>
+                <div class="feature f3">
+                  <small><i class="fas fa-check text-success"></i> 24/7 support</small>
+                </div>              
+              </div>
+              <div class="button-area" style="background-color: #efefef;">
+                <div class="btn btn-sm" style="background-color: rgb(26, 86, 175); color: white">
+                  BUY NOW!
+                </div>
+              </div>
+          </div>
+          <div class="col plan-block mt-3 ml-2 mr-2" style="border-top: 2px solid rgb(25, 158, 147);">
+              <div class="plan plan-type" style="background-color: rgb(30, 196, 160); color: white">
+                FREE PLAN
+              </div>
+              <div class="plan plan-price" style="background-color: rgb(44, 253, 183); color: white">
+                <b>$0 / month</b>
+              </div>
+              <div class="plan plan-features d-flex flex-column">
+                <div class="feature f1">
+                  <small><i class="fas fa-check text-success"></i> Personal use</small>
+                </div>
+                <div class="feature f2 border-top border-bottom">
+                  <small><i class="fas fa-check text-success"></i> Unlimited projects</small>
+                </div>
+                <div class="feature f3">
+                  <small><i class="fas fa-check text-success"></i> 24/7 support</small>
+                </div>              
+              </div>
+              <div class="button-area" style="background-color: #efefef;">
+                <div class="btn btn-sm" style="background-color: rgb(30, 196, 160); color: white">
+                  BUY NOW!
+                </div>
+              </div>
+          </div>
+          <div class="col plan-block mt-3 ml-2 mr-2" style="border-top: 2px solid rgb(105, 105, 105);">
+              <div class="plan plan-type" style="background-color: rgb(145, 145, 145); color: white">
+                FREE PLAN
+              </div>
+              <div class="plan plan-price" style="background-color: rgb(165, 165, 165); color: white">
+                <b>$0 / month</b>
+              </div>
+              <div class="plan plan-features d-flex flex-column">
+                <div class="feature f1">
+                  <small><i class="fas fa-check text-success"></i> Personal use</small>
+                </div>
+                <div class="feature f2 border-top border-bottom">
+                  <small><i class="fas fa-check text-success"></i> Unlimited projects</small>
+                </div>
+                <div class="feature f3">
+                  <small><i class="fas fa-check text-success"></i> 24/7 support</small>
+                </div>              
+              </div>
+              <div class="button-area" style="background-color: #efefef;">
+                <div class="btn btn-sm" style="background-color: rgb(66, 95, 190); color: white">
+                  BUY NOW!
+                </div>
+              </div>
+          </div>
+          <div class="w-100"></div>
+          <div class="col plan-block mt-3 ml-2 mr-2" style="border-top: 2px solid rgb(141, 141, 141, .5);">
+            <div class="plan plan-type bg-light">
+              FREE PLAN
+            </div>
+            <div class="plan plan-price" style="background-color: rgb(219, 219, 219); color: rgb(77, 77, 77)">
+              <b>$0 / month</b>
+            </div>
+            <div class="plan plan-features d-flex flex-column">
+              <div class="feature f1">
+                <small><i class="fas fa-check text-success"></i> Personal use</small>
+              </div>
+              <div class="feature f2 border-top border-bottom">
+                <small><i class="fas fa-check text-success"></i> Unlimited projects</small>
+              </div>
+              <div class="feature f3">
+                <small><i class="fas fa-check text-success"></i> 24/7 support</small>
+              </div>              
+            </div>
+            <div class="button-area" style="background-color: #efefef;">
+              <div class="btn btn-sm" style="background-color: white">
+                BUY NOW!
+              </div>
+            </div>
+          </div>
+          <div class="col plan-block mt-3 ml-2 mr-2" style="border-top: 2px solid rgb(141, 141, 141, .5);">
+            <div class="plan plan-type bg-light">
+              FREE PLAN
+            </div>
+            <div class="plan plan-price" style="background-color: rgb(219, 219, 219); color: rgb(77, 77, 77)">
+              <b>$0 / month</b>
+            </div>
+            <div class="plan plan-features d-flex flex-column">
+              <div class="feature f1">
+                <small><i class="fas fa-check text-success"></i> Personal use</small>
+              </div>
+              <div class="feature f2 border-top border-bottom">
+                <small><i class="fas fa-check text-success"></i> Unlimited projects</small>
+              </div>
+              <div class="feature f3">
+                <small><i class="fas fa-check text-success"></i> 24/7 support</small>
+              </div>              
+            </div>
+            <div class="button-area" style="background-color: #efefef;">
+              <div class="btn btn-sm" style="background-color: white">
+                BUY NOW!
+              </div>
+            </div>
+          </div>
+          <div class="col plan-block mt-3 ml-2 mr-2" style="border-top: 2px solid rgb(141, 141, 141, .5);">
+            <div class="plan plan-type bg-light">
+              FREE PLAN
+            </div>
+            <div class="plan plan-price" style="background-color: rgb(219, 219, 219); color: rgb(77, 77, 77)">
+              <b>$0 / month</b>
+            </div>
+            <div class="plan plan-features d-flex flex-column">
+              <div class="feature f1">
+                <small><i class="fas fa-check text-success"></i> Personal use</small>
+              </div>
+              <div class="feature f2 border-top border-bottom">
+                <small><i class="fas fa-check text-success"></i> Unlimited projects</small>
+              </div>
+              <div class="feature f3">
+                <small><i class="fas fa-check text-success"></i> 24/7 support</small>
+              </div>              
+            </div>
+            <div class="button-area" style="background-color: #efefef;">
+              <div class="btn btn-sm" style="background-color: white">
+                BUY NOW!
+              </div>
+            </div>
+          </div>
+          <div class="col plan-block mt-3 ml-2 mr-2" style="border-top: 2px solid rgb(141, 141, 141, .5);">
+            <div class="plan plan-type bg-light">
+              FREE PLAN
+            </div>
+            <div class="plan plan-price" style="background-color: rgb(219, 219, 219); color: rgb(77, 77, 77)">
+              <b>$0 / month</b>
+            </div>
+            <div class="plan plan-features d-flex flex-column">
+              <div class="feature f1">
+                <small><i class="fas fa-check text-success"></i> Personal use</small>
+              </div>
+              <div class="feature f2 border-top border-bottom">
+                <small><i class="fas fa-check text-success"></i> Unlimited projects</small>
+              </div>
+              <div class="feature f3">
+                <small><i class="fas fa-check text-success"></i> 24/7 support</small>
+              </div>              
+            </div>
+            <div class="button-area" style="background-color: #efefef;">
+              <div class="btn btn-sm" style="background-color: white">
+                BUY NOW!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
