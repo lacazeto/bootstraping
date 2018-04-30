@@ -1,0 +1,132 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap-Exercise</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>                   
+    <style>
+      main {
+        height: 100vh;
+      }
+      .vertical-spacing {
+        margin-bottom: 15px;
+      }
+      .login-block, .payment-block {
+        width: 50%;
+      }
+      .btn-select-login {
+        display: block;
+      }
+      #btn-left {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      #btn-right {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+      .login-form {
+        margin-top: 25px;
+        position: relative;
+      }
+      .absolute-right {
+        position: absolute;
+        right: 0;
+        transform: translate(-14px, 11px);
+      }
+      .nav-item1 {
+        width: 70px;
+        padding-top: 8px;
+      }
+      h4 {
+        margin-top: 20px;
+        text-align: center;
+      }
+      span {
+        vertical-align: super;
+      }
+      #paypal-details {
+        display: block;
+        text-align: center;
+      }
+      .btn-block {
+        margin-top: 20px;
+      }
+      .text-reduced {
+        font-size: .5em;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="d-flex align-items-center">
+      <div class="container">
+        <div class="row flex-column align-items-center">
+          <div class="login-block">
+            <div class="wrapper d-flex flex-column align-items-center">
+              <div class="select-login-block d-flex">
+                <button type="button" id="btn-left" class="btn btn-primary btn-select-login">
+                  <i class="fas fa-plus"></i> New User
+                </button>
+                <button type="button" id="btn-right" class="btn btn-danger btn-select-login">
+                  <i class="fas fa-user"></i> I have account
+                </button>
+              </div>
+              <div class="vertical-spacing"></div>
+              <small>Click to select</small>
+            </div>
+            <form class="login-form">
+                <div class="form-group">
+                  <i class="fas fa-envelope absolute-right"></i>
+                  <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Email address">
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-key absolute-right"></i>
+                  <input type="password" class="form-control" id="InputPassword" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-key absolute-right"></i>
+                    <input type="password" class="form-control" id="InputPassword" placeholder="Confirm Password">
+                  </div>
+              </form>
+          </div>
+          <div class="vertical-spacing"></div>
+          <div style="width: 50%;"><hr></div>
+          <div class="payment-block">
+            <ul class="nav nav-tabs" id="myTab">
+              <li class="nav-item1">
+                <small><b>Pay with:</b></small>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id="paypal-tab" data-toggle="tab" href="#"><small>$ PayPal</small></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="bitcoin-tab" data-toggle="tab" href="#"><small><i class="fab fa-btc"></i> Bitcoin</small></a>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade" id="paypal" role="tabpanel">
+                <h4>$9,<span>99</span>/mo with <b>$</b></h4>
+                <small id="paypal-details"><a href="#">What is PayPal?</a></small>
+                <button type="button" class="btn btn-primary btn-lg btn-block">PAY $9,<span class="text-reduced">99</span>
+                USD WITH PAYPAL</button>
+              </div>
+              <div class="tab-pane fade" id="bitcoin" role="tabpanel">Nothing to see here</div>
+            </div>
+          </div>        
+        </div>
+      </div>
+    </main>
+
+    <script>
+      $('#myTab a').on('click', function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+      })
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
