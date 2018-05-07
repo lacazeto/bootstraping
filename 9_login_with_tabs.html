@@ -36,7 +36,7 @@
         right: 0;
         transform: translate(-14px, 11px);
       }
-      .nav-item1 {
+      .nav-item-custom {
         width: 70px;
         padding-top: 8px;
       }
@@ -94,19 +94,19 @@
           <div class="vertical-spacing"></div>
           <div style="width: 50%;"><hr></div>
           <div class="payment-block">
-            <ul class="nav nav-tabs" id="myTab">
-              <li class="nav-item1">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item-custom">
                 <small><b>Pay with:</b></small>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" id="paypal-tab" data-toggle="tab" href="#"><small>$ PayPal</small></a>
+                <a class="nav-link active" id="paypal-tab" data-toggle="tab" role="tab" href="#paypal"><small>$ PayPal</small></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="bitcoin-tab" data-toggle="tab" href="#"><small><i class="fab fa-btc"></i> Bitcoin</small></a>
+                <a class="nav-link" id="bitcoin-tab" data-toggle="tab" role="tab" href="#bitcoin"><small><i class="fab fa-btc"></i> Bitcoin</small></a>
               </li>
             </ul>
             <div class="tab-content" id="myTabContent">
-              <div class="tab-pane fade" id="paypal" role="tabpanel">
+              <div class="tab-pane fade show active" id="paypal" role="tabpanel">
                 <h4>$9,<span>99</span>/mo with <b>$</b></h4>
                 <small id="paypal-details"><a href="#">What is PayPal?</a></small>
                 <button type="button" class="btn btn-primary btn-lg btn-block">PAY $9,<span class="text-reduced">99</span>
@@ -118,13 +118,7 @@
         </div>
       </div>
     </main>
-
-    <script>
-      $('#myTab a').on('click', function (e) {
-        e.preventDefault();
-        $(this).tab('show');
-      })
-    </script>
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
